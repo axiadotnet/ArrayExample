@@ -12,9 +12,9 @@ namespace ArrayEx
 
             Array.Sort(players, (p1, p2) => p1.Points.CompareTo(p2.Points));
 
-            //PlayerComparer comparer = new PlayerComparer(OrderType.Points);
+            PlayerComparer comparer = new PlayerComparer(OrderType.Points);
 
-            //Array.Sort(players, comparer);
+            Array.Sort(players, comparer);
 
             foreach (var item in players)
             {
